@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const generateTicketPDF = (booking, event, user) => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {//object
         try {
             const doc = new PDFDocument({
                 size: [400, 700], // Vertical size
